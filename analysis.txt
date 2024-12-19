@@ -1,0 +1,19 @@
+The overall time complexity of my program is O(N log N). It becomes N log N 
+because of the Sort function that is used on the vector containing each of its respective type. 
+
+Reading the input:
+For just reading the input, the time complexity is O(N) as it has to iterate through the entire file character by character.
+
+Storing values:
+The modifiers used includes the insert function calls for the unordered map which are all O(1) along with the push_back function calls for vector which is O(N) worst case (needs resizing), but often O(1).
+
+Looking up final tracking info:
+There is no additional overhead at this stage because frequency count has been maintained during input processing. 
+Accessing any frequency from the map is O(1) on average.
+
+Top 10:
+Copying each element from a map to the vector is O(N).
+Sorting the vector is O(N log N) for each type. This is the most taxing part of the program in terms of time complexity causing the overall complexity to be O(N log N).
+
+Additional algorithms:
+stoi is used to convert the string tokens to integers when necessary which is typically linear in complexity. 
